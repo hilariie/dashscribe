@@ -1,0 +1,25 @@
+# Virtual environments
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Data (dashcam clips)
+data/
+
+# Local prompt-iteration scratch (canonical prompt lives in server-mirror.py)
+prompts/
+
+# uv
+.uv/
+
+# ruff cache (created by uvx ruff)
+.ruff_cache/
+
+# macOS
+.DS_Store
+
+# Viewer — node deps, build output, vite/vitest caches
+viewer/node_modules/
+viewer/dist/
+viewer/.vite/

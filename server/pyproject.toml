@@ -1,0 +1,18 @@
+[project]
+name = "server"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.136.1",
+    "pillow>=12.2.0",
+    "pydantic>=2.13.4",
+    "torch>=2.11.0",
+    "transformers>=5.8.0",
+    "uvicorn>=0.46.0",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.0.3",
+]
