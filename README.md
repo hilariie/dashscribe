@@ -4,6 +4,8 @@ A vision-language model watches dashcam footage and narrates what it sees, frame
 
 Inspired by Wayve's [LINGO-1](https://wayve.ai/thinking/lingo-natural-language-autonomous-driving/). This is a hobbyist-scope reproduction of the idea, not a research artefact.
 
+<video src="docs/demo.mp4" controls playsinline width="100%"></video>
+
 ## What it does
 
 A pre-recorded driving clip is sampled once per second; each frame is sent to a Qwen2-VL-7B server on a remote A100, which returns one short caption ending in an action. A React viewer plays the original video back with those captions as subtitles, on a calmer "display track" that holds for ≥2.5 s and only swaps when the advice meaningfully changes — but hard-preempts when the model escalates to `brake`, `stop`, `swerve`, or flags `collision`/`debris`. A separate offline pass synthesises an MP3 of just those urgent lines via [kokoro-onnx](https://github.com/thewh1teagle/kokoro-onnx) and ffmpeg-muxes it onto the video so the audio narration only fires on real events, not on every frame.
