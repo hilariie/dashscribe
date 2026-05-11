@@ -4,7 +4,7 @@ A vision-language model watches dashcam footage and narrates what it sees, frame
 
 Inspired by Wayve's [LINGO-1](https://wayve.ai/thinking/lingo-natural-language-autonomous-driving/). This is a hobbyist-scope reproduction of the idea, not a research artefact.
 
-<video src="docs/demo.mp4" controls playsinline width="100%"></video>
+<video src="https://github.com/user-attachments/assets/cb0459cb-d400-47aa-a397-000c8c201708" controls></video>
 
 ## What it does
 
